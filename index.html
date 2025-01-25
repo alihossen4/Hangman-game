@@ -3,14 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    
 </head>
 <body>
-    <div class="container">
-        <div class="hangman-box">
-            <img src="images/hangman-0.svg" alt="">
-            <h1>Hangman Game</h1>
+    <div class="game-modal">
+        <div class="content">
+            <img src="./images/sad.png" alt="">
+            <h3>Game Over!</h3>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button>Play Again!</button>
         </div>
     </div>
+    <div class="container">
+        <div class="hangman-box" >
+            <img src="images/hangman-0.svg" >
+            <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display">
+            
+            </ul>
+            <h4 class="hint-text">
+                Hint:
+                <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+            </h4>
+            <h4 class="guess-text">
+                Incorrect gueesses:
+                <b>0 / 6</b>
+            </h4>
+            <div class="keyboard">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/word-list.js" ></script>
+    <script src="./script/script.js"></script>
+
 </body>
 </html>
